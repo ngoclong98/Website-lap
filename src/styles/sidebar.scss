@@ -1,0 +1,27 @@
+@import "./globals.scss";
+@import "./variable.scss";
+@import "~bootstrap/scss/bootstrap";
+.sidebarHeader {
+  @extend .subTitle18;
+  @extend .textOnSurface;
+  @extend .d-flex;
+  @extend .flex-row;
+  @extend .align-items-center;
+  padding: 18px;
+  background-color: $backgroundColor;
+  cursor: pointer;
+}
+.sidebarItem {
+  @extend .body14;
+  @extend .textOnSurface;
+  @extend .d-flex;
+  @extend .flex-row;
+  @extend .align-items-center;
+  padding: 18px 14px;
+  background-color: $surfaceColor;
+  cursor: pointer;
+}
+.sidebarBody {
+  padding: 0 !important;
+  background-color: $surfaceColor;
+}

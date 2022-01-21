@@ -1,0 +1,11 @@
+@import "../../styles/variable.scss";
+@import "../../styles/globals.scss";
+
+.heartImg {
+  width: 92px;
+  height: 92px;
+  position: fixed;
+  bottom: 15px;
+  left: calc(50vw - 46px);
+  z-index: 10;
+}

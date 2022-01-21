@@ -1,0 +1,21 @@
+@import "../../styles/globals.scss";
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.closeImgContainer {
+  padding: 4px 0px;
+}
+.container {
+  @extend .columnCenter;
+  height: 100vh;
+  background-color: black;
+}
+.closeImg {
+  width: 20px;
+  height: 20px;
+}
+.toolbar {
+  z-index: 2000;
+}

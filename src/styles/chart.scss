@@ -1,0 +1,79 @@
+@import "./variable.scss";
+@import "./globals.scss";
+@import "~bootstrap/scss/bootstrap";
+.dashboardContent {
+    padding: 8px 16px;
+    @media (max-width: 768px) {
+        padding: 0px;
+    }
+}
+
+.chartContainer {
+    padding: 36px 16px 24px 16px;
+    background-color: $surfaceColor;
+    border-color: 1px solid $seperatorColor;
+    border-radius: 4px;
+    @media (max-width: 768px) {
+        border-radius: 0px;
+        border-bottom: 2px dashed $seperatorColor;
+    }
+}
+
+.chartTitle {
+    margin-bottom: 27px;
+    @extend .title20;
+    @extend .textOnSurface;
+}
+
+.largeChartInfo {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 56px;
+    @extend .textOnSurface;
+}
+
+.largeChartInfo2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    @extend .textOnSurface;
+}
+
+.xAxis {
+    color: $onSurfaceColor;
+}
+
+.chartTableHeader {
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .align-items-center;
+    background-color: $backgroundColor;
+    padding: 12px 0px;
+}
+
+.chartTalbeItem {
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .align-items-center;
+    padding: 14px 0px;
+    border-bottom: 1px solid $seperatorColor;
+}
+
+.chartTalbeItemLast {
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .align-items-center;
+    padding: 14px 0px;
+}
+
+.chartTableItemName {
+    @extend .body12;
+    @extend .textOnSurface;
+}
+
+.chartTableItemValue {
+    @extend .textOnSurface;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+}
